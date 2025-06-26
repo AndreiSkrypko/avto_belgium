@@ -1,0 +1,165 @@
+    /* ====================== */
+/* Стили для иконок соцсетей в шапке сайта */
+/* ====================== */
+
+.social-links i {
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.social-links a:hover i {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+.social-links .whatsapp i {
+  color: #25D366;
+}
+
+.social-links .viber i {
+  color: #665CAC;
+}
+
+.social-links .telegram i {
+  color: #0088cc;
+}
+
+.social-links .instagram i {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%,
+                              #fdf497 5%, #fd5949 45%,
+                              #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d6249f; /* fallback */
+}
+
+.social-links a {
+  text-decoration: none !important;
+}
+
+/* ====================== */
+/* Стили для header заголовка */
+/* ====================== */
+
+/* --------------------- ГЕРО-СЕКЦИЯ --------------------- */
+.hero-section {
+  background-image: url('../img/avto_header.jpg'); /* Фоновое изображение */
+  background-size: cover;                          /* Растянуть изображение на весь блок */
+  background-position: center;                     /* Центрировать изображение */
+  background-repeat: no-repeat;                    /* Не повторять изображение */
+  position: relative;                              /* Для позиционирования затемняющего слоя (::before) */
+  color: white;                                    /* Цвет текста внутри hero по умолчанию */
+  margin-top: -80px;                               /* Поднять секцию вверх, чтобы фон заходил под navbar */
+  padding-top: 180px;                              /* Добавить отступ сверху, чтобы контент не перекрывался navbar */
+  padding-bottom: 100px;                           /* Отступ снизу — пространство под контентом */
+  overflow: hidden;                                /* Скрыть всё, что выходит за пределы блока */
+  z-index: 1;                                       /* Поверх затемняющего слоя */
+}
+
+/* Затемнение фона поверх изображения — создаёт читаемость текста */
+.hero-section::before {
+  content: "";                                     /* Псевдоэлемент без контента */
+  position: absolute;                              /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);           /* Чёрный полупрозрачный фон (затемнение) */
+  z-index: 0;                                      /* Под контентом, но над изображением */
+}
+
+/* Гарантирует, что контент внутри hero окажется поверх затемнения */
+.hero-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Добавляет чёрную тень к тексту, улучшая читаемость на светлом фоне */
+.text-shadow {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* --------------------- NAVBAR --------------------- */
+
+/* Начальное состояние навбара — полностью прозрачный */
+.navbar-custom {
+  transition: all 0.3s ease;                       /* Плавный переход (например, при скролле) */
+  background-color: transparent !important;        /* Прозрачный фон */
+}
+
+/* Белый цвет текста и ссылок — видно на фоне тёмного изображения */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom a {
+  color: white !important;
+}
+
+/* Стиль навбара после прокрутки вниз (когда появляется белый фон) */
+.navbar-scrolled {
+  background-color: white !important;              /* Белый фон при скролле */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);        /* Лёгкая тень под навбаром */
+}
+
+/* Ссылки и текст становятся тёмными — лучше видно на белом фоне */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .navbar-custom a {
+  color: #000 !important;
+}
+
+
+/* ====================== */
+/* Стили для логотипа меняет цвет при прокрутке */
+/* ====================== */
+
+
+
+/* Исходные стили логотипа на прозрачном фоне (на фоне hero) */
+.navbar-custom .logo-part-avto {
+  color: #00ced1; /* ярко-бирюзовый */
+}
+
+.navbar-custom .logo-part-belgium {
+  color: white; /* белый текст, чтобы был читаем на фоне изображения */
+}
+
+/* Стили после прокрутки — когда navbar белый */
+.navbar-scrolled .logo-part-avto {
+  color: #00ced1; /* можно оставить тем же, если он хорошо читается */
+}
+
+.navbar-scrolled .logo-part-belgium {
+  color: #000; /* чёрный текст — читаемый на белом фоне */
+}
+
+
+
+
+/* ====================== */
+/* Добавляю белую окантовку для флагов перед номерами в шапке профиля */
+/* ====================== */
+
+.flag-bordered {
+  border: 1px solid white;    /* Тонкая белая рамка */
+  border-radius: 2px;         /* Немного скруглённые углы */
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6); /* Лёгкое свечение (опционально) */
+}
+
+
+/* ====================== */
+/* Стили для меню навбара "Услуги, Доставка и оплата, Контакты, Отзывы"  */
+/* ====================== */
+.navbar-nav .nav-link {
+
+  font-weight: 600;                   /* Полужирный */
+  letter-spacing: 0px;              /* Чуть-чуть увеличенный межбуквенный интервал */
+  text-transform: uppercase;          /* Сделать заглавными (по желанию) */
+  transition: color 0.3s, transform 0.2s; /* Плавные переходы при наведении */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00ced1 !important;          /* Цвет при наведении */
+  transform: translateY(-2px);        /* Лёгкое приподнимание */
+}
