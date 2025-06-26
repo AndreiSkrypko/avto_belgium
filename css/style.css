@@ -223,3 +223,45 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* ====================== */
+/* Почему именно Бельгия */
+/* ====================== */
+.border-turquoise {
+    border: 2px solid #17a2b8 !important;
+    border-radius: 0.5rem;
+  }
+  .reason-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .reason-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(23, 162, 184, 0.5);
+  }
+  }
+  .card-title {
+    color: #17a2b8;
+  }
+
+
+
+
+
+
+
+
+/* ====================== */
+/* Наши гарантии */
+/* ====================== */
+.border-turquoise {
+    border: 2px solid #17a2b8 !important;
+    border-radius: 0.5rem;
+  }
+  .guarantee-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .guarantee-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(23, 162, 184, 0.5);
+  }
