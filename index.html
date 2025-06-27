@@ -729,42 +729,43 @@
 <!-- Скрипт из formspree, бесплатные формы -->
 <script>
     // Инициализация формы
-    window.formbutton = window.formbutton || function () {
-      (formbutton.q = formbutton.q || []).push(arguments);
-    };
+window.formbutton = window.formbutton || function () {
+  (formbutton.q = formbutton.q || []).push(arguments);
+};
 
-    // Настройка формы
-    formbutton("create", {
-      action: "https://formspree.io/f/mdkzpvra", // ← Заменить на свой ID
-      title: "Связаться с нами",
-      fields: [
-        {
-          type: "email",
-          label: "Email:",
-          name: "email",
-          required: true,
-          placeholder: "ваш@email.com"
-        },
-        {
-          type: "textarea",
-          label: "Сообщение:",
-          name: "message",
-          placeholder: "О чём вы хотите спросить?"
-        },
-        { type: "submit" }
-      ],
-      styles: {
-        title: {
-          backgroundColor: "#00ced1", // Цвет заголовка
-          color: "white"
-        },
-        button: {
-          backgroundColor: "#00ced1", // Цвет кнопки
-          color: "white"
-        }
-      },
-      initiallyVisible: true // Форма будет сразу видна
-    });
+// Настройка формы
+formbutton("create", {
+  action: "https://formspree.io/f/mdkzpvra", // ← Заменить на свой ID
+  title: "Связаться с нами",
+  fields: [
+    {
+      type: "email",
+      label: "Email:",
+      name: "email",
+      required: true,
+      placeholder: "ваш@email.com"
+    },
+    {
+      type: "textarea",
+      label: "Сообщение:",
+      name: "message",
+      placeholder: "О чём вы хотите спросить?"
+    },
+    { type: "submit" }
+  ],
+  styles: {
+    title: {
+      backgroundColor: "#00ced1",
+      color: "white"
+    },
+    button: {
+      backgroundColor: "#00ced1",
+      color: "white"
+    }
+  },
+  initiallyVisible: false // ← теперь форма НЕ появляется при загрузке
+});
+
 </script>
 
 
