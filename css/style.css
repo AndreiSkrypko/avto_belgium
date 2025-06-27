@@ -347,3 +347,102 @@
   z-index: 2;
   border: 2px solid #00b5ad;
 }
+
+
+/* ====================== */
+/* Стили для формы в контактах */
+/* ====================== */
+.pretty-form {
+    background: linear-gradient(135deg, #a0dcdc, #f7b4c5); /* темнее бирюзово-розовый */
+    border: 3px solid transparent;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(199, 105, 138, 0.3);
+    background-clip: padding-box;
+    position: relative;
+}
+
+.pretty-form::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 3px;
+    background: linear-gradient(135deg, #159a9a, #d86f8b);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.pretty-form .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.pretty-input {
+    background-color: #c2e8e8; /* чуть темнее бирюзовый фон для полей */
+    border: 1px solid #7acaca;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.pretty-input:focus {
+    border-color: #d6708b;
+    box-shadow: 0 0 10px rgba(214, 112, 139, 0.5);
+    outline: none;
+}
+
+.pretty-button {
+    background-color: #159a9a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.pretty-button:hover {
+    background-color: #d6708b;
+    color: white;
+}
+
+
+
+/* ====================== */
+/* Стили для подвала */
+/* ====================== */
+
+.footer-dark {
+  background-color: #000000;
+  border-top: 3px solid #20cfcf;
+}
+
+.logo:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #20cfcf;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #17b8b8;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .rights {
+    margin-top: 10px !important;
+  }
+}

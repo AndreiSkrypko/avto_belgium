@@ -16,6 +16,9 @@
     <!-- Подключение css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Подключение js -->
+    <script src="js/script.js"></script>
+
     <!-- Подключение Formspree это форма для обратной связи-->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
@@ -452,106 +455,115 @@
 
 <!-- Ваши вопросы -->
 <section id="faq" class="section py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title mb-5 text-center">Ваши вопросы</h2>
-    <div class="row g-4 align-items-center">
+    <div class="container">
+        <h2 class="section-title mb-5 text-center">Ваши вопросы</h2>
+        <div class="row g-4 align-items-center">
 
-      <!-- Вопросы -->
-      <div class="col-lg-8">
-        <div class="accordion shadow-sm" id="faqAccordion">
+            <!-- Вопросы -->
+            <div class="col-lg-8">
+                <div class="accordion shadow-sm" id="faqAccordion">
 
-          <!-- Вопрос 1 -->
-          <div class="accordion-item mb-3 border rounded-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
-                data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true">
-                Сколько времени занимает доставка?
-              </button>
-            </h2>
-            <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-              <div class="accordion-body text-white d-flex align-items-start gap-2" style="background-color: #2aa7a1;">
-                <i class="bi bi-clock-history fs-5"></i>
-                <span>Обычно 2–4 недели, в зависимости от наличия машины и таможни.</span>
-              </div>
+                    <!-- Вопрос 1 -->
+                    <div class="accordion-item mb-3 border rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true">
+                                Сколько времени занимает доставка?
+                            </button>
+                        </h2>
+                        <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-white d-flex align-items-start gap-2"
+                                 style="background-color: #2aa7a1;">
+                                <i class="bi bi-clock-history fs-5"></i>
+                                <span>Обычно 2–4 недели, в зависимости от наличия машины и таможни.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 2 -->
+                    <div class="accordion-item mb-3 border rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q2">
+                                Какие документы я получу?
+                            </button>
+                        </h2>
+                        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-white d-flex align-items-start gap-2"
+                                 style="background-color: #2aa7a1;">
+                                <i class="bi bi-file-earmark-text-fill fs-5"></i>
+                                <span>ПТС, договор купли-продажи, инвойс, документы о растаможке и технический паспорт.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 3 -->
+                    <div class="accordion-item mb-3 border rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q3">
+                                Могу ли я сам выбрать машину с сайта?
+                            </button>
+                        </h2>
+                        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-white d-flex align-items-start gap-2"
+                                 style="background-color: #2aa7a1;">
+                                <i class="bi bi-globe2 fs-5"></i>
+                                <span>Да, вы можете отправить нам ссылку на интересующий вас автомобиль — мы проверим его и организуем покупку.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 4 -->
+                    <div class="accordion-item mb-3 border rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q4">
+                                Как происходит оплата?
+                            </button>
+                        </h2>
+                        <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-white d-flex align-items-start gap-2"
+                                 style="background-color: #2aa7a1;">
+                                <i class="bi bi-credit-card-2-front-fill fs-5"></i>
+                                <span>Оплата делится на два этапа: предоплата после заключения договора и окончательный расчёт при получении автомобиля.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вопрос 5 -->
+                    <div class="accordion-item border rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
+                                    type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q5">
+                                Есть ли гарантия на авто?
+                            </button>
+                        </h2>
+                        <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-white d-flex align-items-start gap-2"
+                                 style="background-color: #2aa7a1;">
+                                <i class="bi bi-shield-check fs-5"></i>
+                                <span>Автомобили с официальной историей могут иметь остаточную гарантию от производителя. Также мы предоставляем подробный отчёт и видео осмотра.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
 
-          <!-- Вопрос 2 -->
-          <div class="accordion-item mb-3 border rounded-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
-                data-bs-toggle="collapse" data-bs-target="#q2">
-                Какие документы я получу?
-              </button>
-            </h2>
-            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body text-white d-flex align-items-start gap-2" style="background-color: #2aa7a1;">
-                <i class="bi bi-file-earmark-text-fill fs-5"></i>
-                <span>ПТС, договор купли-продажи, инвойс, документы о растаможке и технический паспорт.</span>
-              </div>
+            <!-- Изображение -->
+            <div class="col-lg-4 text-center">
+                <img src="../img/your_questions.jpg" alt="Авто на вопрос-ответ"
+                     class="img-fluid rounded-4 border border-2 border-secondary shadow-sm"
+                     style="max-width: 600px; width: 100%; height: auto;">
             </div>
-          </div>
-
-          <!-- Вопрос 3 -->
-          <div class="accordion-item mb-3 border rounded-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
-                data-bs-toggle="collapse" data-bs-target="#q3">
-                Могу ли я сам выбрать машину с сайта?
-              </button>
-            </h2>
-            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body text-white d-flex align-items-start gap-2" style="background-color: #2aa7a1;">
-                <i class="bi bi-globe2 fs-5"></i>
-                <span>Да, вы можете отправить нам ссылку на интересующий вас автомобиль — мы проверим его и организуем покупку.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Вопрос 4 -->
-          <div class="accordion-item mb-3 border rounded-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
-                data-bs-toggle="collapse" data-bs-target="#q4">
-                Как происходит оплата?
-              </button>
-            </h2>
-            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body text-white d-flex align-items-start gap-2" style="background-color: #2aa7a1;">
-                <i class="bi bi-credit-card-2-front-fill fs-5"></i>
-                <span>Оплата делится на два этапа: предоплата после заключения договора и окончательный расчёт при получении автомобиля.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Вопрос 5 -->
-          <div class="accordion-item border rounded-3">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
-                data-bs-toggle="collapse" data-bs-target="#q5">
-                Есть ли гарантия на авто?
-              </button>
-            </h2>
-            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body text-white d-flex align-items-start gap-2" style="background-color: #2aa7a1;">
-                <i class="bi bi-shield-check fs-5"></i>
-                <span>Автомобили с официальной историей могут иметь остаточную гарантию от производителя. Также мы предоставляем подробный отчёт и видео осмотра.</span>
-              </div>
-            </div>
-          </div>
 
         </div>
-      </div>
-
-      <!-- Изображение -->
-      <div class="col-lg-4 text-center">
-        <img src="../img/your_questions.jpg" alt="Авто на вопрос-ответ"
-          class="img-fluid rounded-4 border border-2 border-secondary shadow-sm"
-          style="max-width: 600px; width: 100%; height: auto;">
-      </div>
-
     </div>
-  </div>
 </section>
 
 
@@ -630,7 +642,7 @@
 
 
 <!-- Контакты -->
-<section id="contacts" class="py-5 bg-light">
+<section id="contacts" class="py-5" style="background-color: #ebebeb;">
     <div class="container">
         <h2 class="section-title mb-4 text-center">Контакты</h2>
         <p class="lead mb-5 fw-semibold text-center">
@@ -654,6 +666,12 @@
                         <a href="tel:+324701112233" class="text-decoration-none text-dark fw-semibold">+32 470 11 12
                             33</a>
                     </p>
+                    <!-- Добавленная строка с почтой -->
+                    <p class="fs-5 mb-3 d-flex align-items-center">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:example@email.com" class="text-decoration-none text-dark fw-semibold">example@email.com</a>
+                    </p>
+
                     <div class="social-links fs-2 mt-3">
                         <a href="https://wa.me/375291112233" class="me-3 whatsapp" title="WhatsApp"><i
                                 class="fab fa-whatsapp"></i></a>
@@ -667,28 +685,52 @@
                 </div>
             </div>
 
+
             <!-- Правая колонка: Форма -->
             <div class="col-md-6">
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="row g-3">
-                    <div class="col-12">
-                        <label for="email" class="form-label">Ваш Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required
-                               placeholder="you@example.com">
-                    </div>
-                    <div class="col-12">
-                        <label for="message" class="form-label">Сообщение</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Ваш вопрос..."
-                                  required></textarea>
-                    </div>
-                    <div class="col-12 text-end">
-                        <button type="submit" class="btn btn-primary px-4">Отправить</button>
-                    </div>
-                </form>
-            </div>
+    <form action="https://formspree.io/f/mdkzpvra" method="POST" class="row g-3 pretty-form">
+        <div class="col-12">
+            <label for="email" class="form-label">Ваш Email</label>
+            <input type="email" class="form-control pretty-input" id="email" name="email" required
+                   placeholder="you@example.com">
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control pretty-input" id="message" name="message" rows="5"
+                      placeholder="Ваш вопрос..." required></textarea>
+        </div>
+        <div class="col-12 text-end">
+            <button type="submit" class="btn pretty-button px-4">Отправить</button>
+        </div>
+    </form>
+</div>
+
 
         </div>
     </div>
 </section>
+
+
+
+<footer class="footer-dark py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-white">
+    <a href="" class="logo d-flex align-items-center mb-3 mb-md-0" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; font-size: 1.5rem; text-decoration: none;">
+      <span style="color: white;">avto</span><span style="color: #20cfcf;">belgium</span>
+    </a>
+    <div class="unpn mb-3 mb-md-0" style="color: #888; font-size: 0.9rem;">
+      УНП 123456789
+    </div>
+    <div class="social-links d-flex gap-3">
+      <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" class="social-icon" title="Viber"><i class="fab fa-viber"></i></a>
+      <a href="#" class="social-icon" title="Telegram"><i class="fab fa-telegram"></i></a>
+      <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="rights mt-3 mt-md-0" style="color: #666; font-size: 0.85rem;">
+      © 2025 Все права защищены
+    </div>
+  </div>
+</footer>
 
 
 <!-- Скрипт меняет цвет navbar при прокрутке -->
