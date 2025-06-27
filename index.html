@@ -285,32 +285,44 @@
 
 <!-- Как мы работаем -->
 <section id="process" class="section py-5 bg-white">
-    <div class="container text-center">
-        <h2 class="section-title mb-5">Как мы работаем</h2>
+  <div class="container text-center position-relative">
+    <h2 class="section-title mb-5">Как мы работаем</h2>
 
-        <div class="process-steps d-flex justify-content-around align-items-start position-relative" id="steps">
-            <div class="step-wrapper text-center">
-                <div class="step">1</div>
-                <div class="step-text">Параметры авто</div>
-            </div>
-            <div class="step-wrapper text-center">
-                <div class="step">2</div>
-                <div class="step-text">Подбор и согласование</div>
-            </div>
-            <div class="step-wrapper text-center">
-                <div class="step">3</div>
-                <div class="step-text">Договор и предоплата</div>
-            </div>
-            <div class="step-wrapper text-center">
-                <div class="step">4</div>
-                <div class="step-text">Покупка и доставка</div>
-            </div>
-            <div class="step-wrapper text-center">
-                <div class="step">5</div>
-                <div class="step-text">Документы и передача</div>
-            </div>
-        </div>
+    <div class="process-steps d-flex justify-content-around align-items-start position-relative" id="steps" style="position: relative;">
+      <div class="step-wrapper text-center position-relative">
+        <div class="step">1</div>
+        <div class="step-text">Параметры авто</div>
+      </div>
+      <div class="step-wrapper text-center position-relative">
+        <div class="step">2</div>
+        <div class="step-text">Подбор и согласование</div>
+      </div>
+      <div class="step-wrapper text-center position-relative">
+        <div class="step">3</div>
+        <div class="step-text">Договор и предоплата</div>
+      </div>
+      <div class="step-wrapper text-center position-relative">
+        <div class="step">4</div>
+        <div class="step-text">Покупка и доставка</div>
+      </div>
+      <div class="step-wrapper text-center position-relative">
+        <div class="step">5</div>
+        <div class="step-text">Документы и передача</div>
+      </div>
+
+      <!-- SVG машинка -->
+      <div id="car" style="position:absolute; top: -50px; left: 0; width: 80px; transition: left 1s ease;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" fill="none" stroke="#800000" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="8" y="14" width="40" height="10" rx="3" ry="3" fill="#800000"/>
+    <path d="M16 14l-4-8h36l-4 8" fill="#990000"/>
+    <circle cx="20" cy="26" r="6" fill="#660000"/>
+    <circle cx="44" cy="26" r="6" fill="#660000"/>
+    <rect x="24" y="7" width="16" height="7" rx="2" ry="2" fill="#800000"/>
+  </svg>
+</div>
+
     </div>
+  </div>
 </section>
 
 
@@ -521,6 +533,47 @@
     });
 </script>
 
+<!-- Скрипт для машинки -->
+<script>
+  const steps = document.querySelectorAll('#steps .step-wrapper');
+  const car = document.getElementById('car');
+  let currentIndex = 0;
+
+  function activateStep(index) {
+    steps.forEach((step, i) => {
+      const circle = step.querySelector('.step');
+      const text = step.querySelector('.step-text');
+      if (i === index) {
+        circle.classList.add('active');
+        text.classList.add('active');
+      } else {
+        circle.classList.remove('active');
+        text.classList.remove('active');
+      }
+    });
+  }
+
+  function moveCarToStep(index) {
+    const step = steps[index];
+    // Позиция относительно родителя #steps
+    const leftPos = step.offsetLeft + step.offsetWidth / 2 - car.offsetWidth / 2;
+    car.style.left = leftPos + 'px';
+  }
+
+  function nextStep() {
+    activateStep(currentIndex);
+    moveCarToStep(currentIndex);
+
+    currentIndex++;
+    if (currentIndex >= steps.length) {
+      currentIndex = 0;
+    }
+  }
+
+  // Запуск анимации
+  nextStep();
+  setInterval(nextStep, 2000);
+</script>
 
 </body>
 </html>
