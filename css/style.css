@@ -318,3 +318,32 @@
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(23, 162, 184, 0.5);
   }
+
+
+
+/* ====================== */
+/* Стили для отзывов */
+/* ====================== */
+.reviews-carousel {
+  transition: transform 0.5s ease;
+}
+.review-card {
+  flex: 0 0 33.33%;
+  padding: 20px;
+  margin: 0 10px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  filter: blur(2px);
+  opacity: 0.6;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+.review-card.active {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 2;
+  border: 2px solid #00b5ad;
+}
