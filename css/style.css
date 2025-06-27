@@ -248,63 +248,60 @@
 /* ====================== */
 /* Как мы работаем и стили для машинки*/
 /* ====================== */
+#car {
+  position: absolute;
+  bottom: -60px; /* машина теперь снизу */
+  left: 0;
+  width: 80px;
+  transition: left 1s ease;
+}
+
+
 #steps .step-wrapper {
-  cursor: default;
-  width: 120px;
-  height: 90px; /* Фиксируем высоту, чтобы избежать прыжков */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.step {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ccc;
-  margin-bottom: 8px;
-  line-height: 40px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: all 0.5s ease;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.step.active {
-  background-color: #17a2b8;
-  color: white;
-  transform: scale(1.4);
-  box-shadow: 0 0 8px #17a2b8;
-  z-index: 2;
-}
-
-.step-text {
-  font-weight: 500;
-  max-width: 120px;
-  margin: 0 auto;
-  transition: all 0.5s ease;
-  font-size: 1rem;
-  color: #333;
-  transform-origin: center bottom;
-  /* фиксируем высоту текста */
-  height: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-.step-text.active {
-  color: #17a2b8;
-  transform: scale(1.2);
-  font-weight: 700;
-  z-index: 2;
-}
-
+    width: 120px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.5s, background 0.5s;
+  }
+  .step.active {
+    background: #8b3f4d;
+    color: white;
+    transform: scale(1.4);
+    box-shadow: 0 0 8px rgba(128,0,0,0.6);
+    z-index: 2;
+  }
+  .step-text {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.5s, color 0.5s;
+    transform-origin: center bottom;
+    height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .step-text.active {
+    color: #8b3f4d;
+    transform: scale(1.4);
+    font-weight: 700;
+    z-index: 2;
+  }
 
 
 /* ====================== */
