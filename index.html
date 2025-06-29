@@ -35,46 +35,36 @@
 <!-- Навигационная панель -->
 <nav class="navbar navbar-expand-lg sticky-top shadow navbar-custom">
     <div class="container">
-
         <!-- Логотип -->
-        <a class="navbar-brand fw-bold fs-3 d-flex align-items-center text-white" href="#"
-           style="font-family: 'Poppins', sans-serif;">
-      <span class="navbar-logo">
-  <span class="logo-part-avto">avto</span>
-  <span class="logo-part-belgium">belgium</span>
-</span>
+        <a class="navbar-brand" href="#">
+            <span class="logo-part-avto">avto</span>
+            <span class="logo-part-belgium">belgium</span>
         </a>
 
         <!-- Контакты -->
-        <div class="d-flex flex-column mx-5">
-            <p class="fs-6 mb-1 d-flex align-items-center">
-                <img src="https://flagcdn.com/w20/by.png" alt="BY Flag" width="20" height="14"
-                     class="me-2 flag-bordered">
-                <a href="tel:+375291112233" class="text-decoration-none text-dark fw-semibold">+375 29 111-22-33</a>
+        <div class="d-flex flex-row">
+            <p class="mb-1 d-flex align-items-center me-3">
+                <img src="https://flagcdn.com/w20/by.png" alt="BY Flag" class="me-2 flag-bordered">
+                <a href="tel:+375291112233" class="text-decoration-none fw-semibold">+375 29 111-22-33</a>
             </p>
-            <p class="fs-6 mb-0 d-flex align-items-center">
-                <img src="https://flagcdn.com/w20/be.png" alt="BE Flag" width="20" height="14"
-                     class="me-2 flag-bordered">
-                <a href="tel:+324701112233" class="text-decoration-none text-dark fw-semibold">+32 470 11 12 33</a>
+            <p class="mb-0 d-flex align-items-center">
+                <img src="https://flagcdn.com/w20/be.png" alt="BE Flag" class="me-2 flag-bordered">
+                <a href="tel:+324701112233" class="text-decoration-none fw-semibold">+32 470 11 12 33</a>
             </p>
         </div>
 
         <!-- Соцсети -->
-        <div class="social-links fs-2 mt-auto">
-            <a href="https://wa.me/375291112233" target="_blank" rel="noopener" class="me-3 whatsapp"
-               title="WhatsApp">
+        <div class="social-links">
+            <a href="https://wa.me/375291112233" target="_blank" rel="noopener" class="whatsapp" title="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="viber://chat?number=+375291112233" target="_blank" rel="noopener" class="me-3 viber"
-               title="Viber">
+            <a href="viber://chat?number=+375291112233" target="_blank" rel="noopener" class="viber" title="Viber">
                 <i class="fab fa-viber"></i>
             </a>
-            <a href="https://t.me/yourusername" target="_blank" rel="noopener" class="me-3 telegram"
-               title="Telegram">
+            <a href="https://t.me/yourusername" target="_blank" rel="noopener" class="telegram" title="Telegram">
                 <i class="fab fa-telegram"></i>
             </a>
-            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener" class="me-3 instagram"
-               title="Instagram">
+            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener" class="instagram" title="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
@@ -88,10 +78,10 @@
         <!-- Меню -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <div class="navbar-nav">
-                <a class="nav-link fs-5 mx-2" href="#about">Услуги</a>
-                <a class="nav-link fs-5 mx-2" href="#process">Доставка и оплата</a>
-                <a class="nav-link fs-5 mx-2" href="#contacts">Контакты</a>
-                <a class="nav-link fs-5 mx-2" href="#reviews">Отзывы</a>
+                <a class="nav-link" href="#about">Услуги</a>
+                <a class="nav-link" href="#process">Доставка и оплата</a>
+                <a class="nav-link" href="#contacts">Контакты</a>
+                <a class="nav-link" href="#reviews">Отзывы</a>
             </div>
         </div>
     </div>
@@ -139,51 +129,56 @@
 
 
 <!-- Автомобильные площадки -->
-<section class="container my-5">
-    <h2 class="section-title mb-4 text-center">Крупнейшие автомобильные площадки</h2>
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <p class="lead mb-4">
-                Вы можете самостоятельно ознакомиться с широким выбором автомобилей на крупнейших онлайн-площадках
-                Европы —
-                <a href="https://www.mobile.de" target="_blank" rel="noopener noreferrer"
-                   class="text-decoration-underline text-primary fw-semibold text-center">
-                    mobile.de
-                </a> и
-                <a href="https://www.autoscout24.de" target="_blank" rel="noopener noreferrer"
-                   class="text-decoration-underline text-primary fw-semibold">
-                    autoscout24.de
-                </a>.
-                Эти ресурсы предлагают более 2,5 миллионов объявлений о продаже легковых и коммерческих авто.
-            </p>
+<section class="platforms-section">
+    <div class="container my-5">
+        <h2 class="section-title mb-4 text-center">Крупнейшие автомобильные площадки</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <p class="lead mb-4">
+                    Вы можете самостоятельно ознакомиться с широким выбором автомобилей на крупнейших онлайн-площадках
+                    Европы —
+                    <a href="https://www.mobile.de" target="_blank" rel="noopener noreferrer"
+                       class="text-decoration-underline text-primary fw-semibold text-center">
+                        mobile.de
+                    </a> и
+                    <a href="https://www.autoscout24.de" target="_blank" rel="noopener noreferrer"
+                       class="text-decoration-underline text-primary fw-semibold">
+                        autoscout24.de
+                    </a>.
+                    Эти ресурсы предлагают более 2,5 миллионов объявлений о продаже легковых и коммерческих авто.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="row g-4 justify-content-center">
-        <div class="col-md-4 col-sm-6">
-            <a href="https://autoscout24.be" target="_blank" rel="noopener" class="text-decoration-none">
-                <div class="custom-tile shadow">
-                    <img src="img/auto_scout.png" alt="Autoscout24" loading="lazy">
-                    <div class="custom-overlay-text">Autoscout24</div>
-                </div>
-            </a>
-        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 col-sm-6">
+                <a href="https://autoscout24.be" target="_blank" rel="noopener" class="text-decoration-none">
+                    <div class="custom-tile shadow">
+                        <img src="img/auto_scout.png" alt="Autoscout24" loading="lazy"
+                             onerror="this.src='img/placeholder.svg'; this.style.opacity='0.7';">
+                        <div class="custom-overlay-text">Autoscout24</div>
+                    </div>
+                </a>
+            </div>
 
-        <div class="col-md-4 col-sm-6">
-            <a href="https://www.mobile.de/" target="_blank" rel="noopener" class="text-decoration-none">
-                <div class="custom-tile shadow">
-                    <img src="img/mobile_de.png" alt="mobile.de" loading="lazy">
-                    <div class="custom-overlay-text">mobile.de</div>
-                </div>
-            </a>
-        </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="https://www.mobile.de/" target="_blank" rel="noopener" class="text-decoration-none">
+                    <div class="custom-tile shadow">
+                        <img src="img/mobile_de.png" alt="mobile.de" loading="lazy"
+                             onerror="this.src='img/placeholder.svg'; this.style.opacity='0.7';">
+                        <div class="custom-overlay-text">mobile.de</div>
+                    </div>
+                </a>
+            </div>
 
-        <div class="col-md-4 col-sm-6">
-            <a href="https://www.customs.gov.by/calc/" target="_blank" rel="noopener" class="text-decoration-none">
-                <div class="custom-tile shadow">
-                    <img src="img/calculator.png" alt="Таможенный калькулятор" loading="lazy">
-                    <div class="custom-overlay-text">Расчёт таможенных платежей</div>
-                </div>
-            </a>
+            <div class="col-md-4 col-sm-6">
+                <a href="https://www.customs.gov.by/calc/" target="_blank" rel="noopener" class="text-decoration-none">
+                    <div class="custom-tile shadow">
+                        <img src="img/calculator.png" alt="Таможенный калькулятор" loading="lazy"
+                             onerror="this.src='img/placeholder.svg'; this.style.opacity='0.7';">
+                        <div class="custom-overlay-text">Расчёт таможенных платежей</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -318,9 +313,9 @@
                 <div class="step-text mt-4">Документы и передача</div>
             </div>
 
-            <!-- Машинка JPG -->
+            <!-- Машинка PNG -->
             <div id="car" style="position: absolute; bottom: -60px; left: 0; width: 100px; transition: left 1s ease;">
-                <img src="../img/car.jpg" alt="Машинка" style="width: 100%; height: auto;">
+                <img src="img/car.jpg" alt="Машинка" style="width: 100%; height: auto;">
             </div>
         </div>
     </div>
@@ -453,115 +448,72 @@
 <hr class="custom-divider">
 
 
-<!-- Ваши вопросы -->
-<section id="faq" class="section py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title mb-5 text-center">Ваши вопросы</h2>
-        <div class="row g-4 align-items-center">
-
-            <!-- Вопросы -->
+<!-- Секция вопрос-ответ -->
+<section class="faq-section">
+    <div class="container my-5">
+        <h2 class="section-title mb-5 text-center">Часто задаваемые вопросы</h2>
+        <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="accordion shadow-sm" id="faqAccordion">
-
-                    <!-- Вопрос 1 -->
-                    <div class="accordion-item mb-3 border rounded-3">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button rounded-3 bg-white text-dark fw-semibold fs-5" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true">
-                                Сколько времени занимает доставка?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-white d-flex align-items-start gap-2"
-                                 style="background-color: #2aa7a1;">
-                                <i class="bi bi-clock-history fs-5"></i>
-                                <span>Обычно 2–4 недели, в зависимости от наличия машины и таможни.</span>
-                            </div>
-                        </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Сколько времени занимает доставка автомобиля из Бельгии?</span>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-
-                    <!-- Вопрос 2 -->
-                    <div class="accordion-item mb-3 border rounded-3">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
-                                    type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#q2">
-                                Какие документы я получу?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-white d-flex align-items-start gap-2"
-                                 style="background-color: #2aa7a1;">
-                                <i class="bi bi-file-earmark-text-fill fs-5"></i>
-                                <span>ПТС, договор купли-продажи, инвойс, документы о растаможке и технический паспорт.</span>
-                            </div>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Сроки доставки зависят от выбранного способа транспортировки. При доставке автовозом - 3-5 дней, при доставке по железной дороге - 7-10 дней. Мы всегда информируем клиента о точных сроках на каждом этапе.</p>
                     </div>
+                </div>
 
-                    <!-- Вопрос 3 -->
-                    <div class="accordion-item mb-3 border rounded-3">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
-                                    type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#q3">
-                                Могу ли я сам выбрать машину с сайта?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-white d-flex align-items-start gap-2"
-                                 style="background-color: #2aa7a1;">
-                                <i class="bi bi-globe2 fs-5"></i>
-                                <span>Да, вы можете отправить нам ссылку на интересующий вас автомобиль — мы проверим его и организуем покупку.</span>
-                            </div>
-                        </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Какие документы нужны для покупки автомобиля?</span>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-
-                    <!-- Вопрос 4 -->
-                    <div class="accordion-item mb-3 border rounded-3">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
-                                    type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#q4">
-                                Как происходит оплата?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-white d-flex align-items-start gap-2"
-                                 style="background-color: #2aa7a1;">
-                                <i class="bi bi-credit-card-2-front-fill fs-5"></i>
-                                <span>Оплата делится на два этапа: предоплата после заключения договора и окончательный расчёт при получении автомобиля.</span>
-                            </div>
-                        </div>
+                    <div class="faq-answer">
+                        <p>Для физических лиц: паспорт, ИНН. Для юридических лиц: учредительные документы, свидетельство о регистрации. Мы помогаем собрать все необходимые документы и сопровождаем процесс оформления.</p>
                     </div>
+                </div>
 
-                    <!-- Вопрос 5 -->
-                    <div class="accordion-item border rounded-3">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed rounded-3 bg-white text-dark fw-semibold fs-5"
-                                    type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#q5">
-                                Есть ли гарантия на авто?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-white d-flex align-items-start gap-2"
-                                 style="background-color: #2aa7a1;">
-                                <i class="bi bi-shield-check fs-5"></i>
-                                <span>Автомобили с официальной историей могут иметь остаточную гарантию от производителя. Также мы предоставляем подробный отчёт и видео осмотра.</span>
-                            </div>
-                        </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Проверяете ли вы техническое состояние автомобиля?</span>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
+                    <div class="faq-answer">
+                        <p>Да, мы проводим полную техническую диагностику каждого автомобиля перед покупкой. Проверяем двигатель, трансмиссию, кузов, электронику. Предоставляем подробный отчет о состоянии.</p>
+                    </div>
+                </div>
 
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Можете ли вы найти конкретную модель автомобиля?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Конечно! Мы ищем автомобили по вашим критериям: марка, модель, год выпуска, комплектация, бюджет. Работаем с крупнейшими площадками Европы и имеем прямые контакты с дилерами.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Какие гарантии вы предоставляете?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы предоставляем полную гарантию на наши услуги. Если автомобиль не соответствует заявленному состоянию, мы вернем деньги или заменим автомобиль. Все условия прописаны в договоре.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Работаете ли вы с кредитными организациями?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы сотрудничаем с ведущими банками Беларуси. Помогаем оформить автокредит на выгодных условиях. Процентная ставка от 8% годовых, срок кредитования до 7 лет.</p>
+                    </div>
                 </div>
             </div>
-
-            <!-- Изображение -->
-            <div class="col-lg-4 text-center">
-                <img src="../img/your_questions.jpg" alt="Авто на вопрос-ответ"
-                     class="img-fluid rounded-4 border border-2 border-secondary shadow-sm"
-                     style="max-width: 600px; width: 100%; height: auto;">
-            </div>
-
         </div>
     </div>
 </section>
@@ -764,7 +716,6 @@
         navbar.classList.remove('navbar-scrolled');
       }
     });
-    </<script !src="">
 </script>
 
 
@@ -837,28 +788,31 @@ formbutton("create", {
 
 <!-- Скрипт для аккордеона отзывов -->
 <script>
-    let index = 0;
-    const track = document.getElementById('reviewsTrack');
-    const reviews = document.querySelectorAll('.review-card');
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('reviewsTrack');
+  const reviews = document.querySelectorAll('.review-card');
+  let index = 0;
 
-    function updateCarousel() {
-      reviews.forEach((card, i) => {
-        card.classList.remove('active');
-      });
-      const center = index % reviews.length;
-      reviews[center].classList.add('active');
+  function updateCarousel() {
+    reviews.forEach(card => card.classList.remove('active'));
 
-      const offset = -(center - 1) * (reviews[0].offsetWidth + 20);
-      track.style.transform = `translateX(${offset}px)`;
-    }
+    const activeIndex = index % reviews.length;
+    reviews[activeIndex].classList.add('active');
 
-    setInterval(() => {
-      index++;
-      updateCarousel();
-    }, 5000);
+    const cardWidth = reviews[0].offsetWidth + 30; // ширина + margin (15*2)
+    const offset = -(cardWidth * activeIndex) + (track.parentElement.offsetWidth/2 - cardWidth/2);
+    track.style.transform = `translateX(${offset}px)`;
+  }
 
+  setInterval(() => {
+    index = (index + 1) % reviews.length;
     updateCarousel();
+  }, 5000);
+
+  updateCarousel();
+});
 </script>
+
 
 
 </body>
