@@ -1191,14 +1191,85 @@ html {
 ::-moz-selection {
   background: var(--primary-color);
   color: var(--white);
-}
+} 
 
 
-
+/* ====================== */
+/* Мобильное меню — улучшения */
+/* ====================== */
 
 @media (max-width: 768px) {
   .navbar-custom {
     background-color: var(--primary-dark) !important;
     box-shadow: var(--shadow-medium);
+  }
+
+  .navbar-collapse {
+    background-color: var(--primary-dark);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    color: var(--white) !important;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-nav .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: none;
+    width: 24px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: relative;
+    display: block;
+    transition: var(--transition);
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 0;
+    transition: var(--transition);
+  }
+
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+}
+
+.navbar-collapse.collapse.show {
+  animation: fadeSlideDown 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
