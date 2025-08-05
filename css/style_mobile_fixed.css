@@ -37,6 +37,8 @@ body {
   color: var(--text-dark);
   background-color: #fafafa;
   overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
 }
 
 /* Типографика */
@@ -368,6 +370,8 @@ section {
   position: relative;
   z-index: 2;
   background: var(--white);
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Секция автомобильных площадок */
@@ -886,6 +890,78 @@ section {
   transform: translateX(5px);
 }
 
+/* Footer phone numbers styling */
+.footer-dark .phone-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-dark .contact-item {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-dark .contact-item a {
+  color: #888;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-dark .contact-item a:hover {
+  color: var(--primary-color);
+}
+
+.footer-dark .flag-bordered {
+  width: 20px;
+  height: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.footer-dark .flag-bordered:hover {
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Footer social links styling */
+.footer-dark .social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-dark .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footer-dark .social-links a:hover {
+  background: var(--primary-color);
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.footer-dark .social-links .viber:hover {
+  background: #7360f2;
+}
+
+.footer-dark .social-links .telegram:hover {
+  background: #0088cc;
+}
+
 .social-icon {
   font-size: 1.8rem;
   color: var(--primary-color);
@@ -896,6 +972,16 @@ section {
 .social-icon:hover {
   color: var(--white);
   transform: scale(1.2);
+}
+
+/* ====================== */
+/* Container overflow fix */
+/* ====================== */
+
+.container {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* ====================== */
@@ -1266,6 +1352,8 @@ section {
 /* Плавная прокрутка */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Выделение текста */
