@@ -750,7 +750,7 @@ section {
 
 .position-relative.overflow-hidden {
   overflow: hidden;
-  max-width: 9900px; /* ширина области видимости */
+  max-width: 100%; /* Responsive width */
   margin: 0 auto;
   position: relative;
 }
@@ -774,6 +774,7 @@ section {
   transform: scale(0.9);
   transition: all 0.5s ease;
   border: 2px solid transparent;
+  max-width: 90vw; /* Prevent overflow on mobile */
 }
 
 .review-card.active {
@@ -1011,6 +1012,14 @@ section {
     margin-bottom: 2rem;
   }
   
+  /* Fix for reviews section on mobile */
+  .review-card {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    padding: 20px;
+    max-width: 85vw;
+  }
+  
   .navbar-nav .nav-link {
     text-align: center;
     margin: 0.5rem 0;
@@ -1051,6 +1060,14 @@ section {
   .platforms-section .lead {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+  }
+  
+  /* Fix for reviews section on small mobile */
+  .review-card {
+    flex: 0 0 280px;
+    margin: 0 8px;
+    padding: 15px;
+    max-width: 80vw;
   }
   
   .navbar-custom .logo-part-avto {

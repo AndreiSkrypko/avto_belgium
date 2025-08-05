@@ -793,7 +793,7 @@ section {
 
 .position-relative.overflow-hidden {
   overflow: hidden;
-  max-width: 9900px; /* ширина области видимости */
+  max-width: 100%; /* Responsive width */
   margin: 0 auto;
   position: relative;
 }
@@ -817,6 +817,7 @@ section {
   transform: scale(0.9);
   transition: all 0.5s ease;
   border: 2px solid transparent;
+  max-width: 90vw; /* Prevent overflow on mobile */
 }
 
 .review-card.active {
@@ -1113,6 +1114,14 @@ section {
     font-size: 1.4rem;
     padding: 20px 15px;
   }
+  
+  /* Fix for reviews section on mobile */
+  .review-card {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    padding: 20px;
+    max-width: 85vw;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1163,6 +1172,14 @@ section {
   
   .social-links i {
     font-size: 0.8rem;
+  }
+  
+  /* Fix for reviews section on small mobile */
+  .review-card {
+    flex: 0 0 280px;
+    margin: 0 8px;
+    padding: 15px;
+    max-width: 80vw;
   }
 }
 
