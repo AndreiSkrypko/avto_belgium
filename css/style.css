@@ -89,7 +89,7 @@ p {
 }
 
 /* Логотип — цвета флага Бельгии с жирностью и выразительностью */
-.navbar-custom .logo-part-avto {
+.navbar-custom .logo-part-west {
   color: #000000; /* Чёрный */
   font-weight: 900;
   font-size: 1.6rem;
@@ -97,12 +97,45 @@ p {
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
-.navbar-custom .logo-part-belgium {
-  color: #ffd700; /* Жёлтый */
+.navbar-custom .logo-part-gruz {
+  color: #FFC700; /* Ярко-золотой */
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+.navbar-custom .logo-part-auto {
+  color: #E60000; /* Ярко-красный */
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+/* При прокрутке — сохраняем стиль */
+.navbar-scrolled .logo-part-west {
+  color: #000000; /* Чёрный */
   font-weight: 900;
   font-size: 1.6rem;
   letter-spacing: 0.5px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.navbar-scrolled .logo-part-gruz {
+  color: #FFC700; /* Ярко-золотой */
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+.navbar-scrolled .logo-part-auto {
+  color: #E60000; /* Ярко-красный */
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
 }
 
 /* Контактная информация */
@@ -895,8 +928,9 @@ section {
     padding: 0.25rem 0;
   }
   
-  .navbar-custom .logo-part-avto,
-  .navbar-custom .logo-part-belgium {
+  .navbar-custom .logo-part-west,
+  .navbar-custom .logo-part-gruz,
+  .navbar-custom .logo-part-auto {
     font-size: 1.3rem;
   }
   
@@ -971,8 +1005,9 @@ section {
 }
 
 @media (max-width: 576px) {
-  .navbar-custom .logo-part-avto,
-  .navbar-custom .logo-part-belgium {
+  .navbar-custom .logo-part-west,
+  .navbar-custom .logo-part-gruz,
+  .navbar-custom .logo-part-auto {
     font-size: 1.1rem;
   }
   
