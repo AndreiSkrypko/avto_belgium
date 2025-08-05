@@ -208,6 +208,7 @@ p {
 .navbar-custom .nav-link,
 .navbar-custom .navbar-brand,
 .navbar-custom .contact-item a {
+  color: var(--white) !important;
   transition: var(--transition);
 }
 
