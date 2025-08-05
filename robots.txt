@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://westgruzauto.netlify.app/sitemap.xml
+# Запрещаем индексацию служебных файлов
+Disallow: /css/
+Disallow: /js/
+Disallow: /img/
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.gif$
+Disallow: /*.svg$
+
+# Разрешаем индексацию изображений для SEO
+Allow: /img/*.jpg
+Allow: /img/*.png
+Allow: /img/*.webp
+
+# Указываем задержку между запросами
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://avtobelgium.by/sitemap.xml
+
+# Дополнительные sitemap для изображений
+Sitemap: https://avtobelgium.by/sitemap-images.xml

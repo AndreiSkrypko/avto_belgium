@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://avtobelgium.by/</loc>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/avto_header.jpg</image:loc>
+      <image:title>Авто из Бельгии - Доставка автомобилей в Беларусь</image:title>
+      <image:caption>Профессиональный подбор и доставка автомобилей из Бельгии в Беларусь. 8 лет опыта, 1800+ выкупленных авто</image:caption>
+      <image:license>https://avtobelgium.by/</image:license>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avtobelgium.by/</loc>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/auto_scout.png</image:loc>
+      <image:title>Autoscout24 - Автомобильная площадка</image:title>
+      <image:caption>Крупнейшая европейская площадка для поиска автомобилей. Более 2,5 миллионов объявлений</image:caption>
+      <image:license>https://avtobelgium.by/</image:license>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avtobelgium.by/</loc>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/mobile_de.png</image:loc>
+      <image:title>Mobile.de - Автомобильная площадка</image:title>
+      <image:caption>Немецкая площадка для поиска автомобилей. Широкий выбор легковых и коммерческих авто</image:caption>
+      <image:license>https://avtobelgium.by/</image:license>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avtobelgium.by/</loc>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/calculator.png</image:loc>
+      <image:title>Таможенный калькулятор</image:title>
+      <image:caption>Расчет таможенных платежей при ввозе автомобилей в Беларусь. Актуальные ставки и правила</image:caption>
+      <image:license>https://avtobelgium.by/</image:license>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avtobelgium.by/</loc>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/car.jpg</image:loc>
+      <image:title>Процесс доставки автомобиля</image:title>
+      <image:caption>Как мы работаем - этапы доставки автомобиля из Бельгии в Беларусь</image:caption>
+      <image:license>https://avtobelgium.by/</image:license>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://avtobelgium.by/</loc>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/your_questions.jpg</image:loc>
+      <image:title>Часто задаваемые вопросы</image:title>
+      <image:caption>Ответы на популярные вопросы о доставке автомобилей из Бельгии</image:caption>
+      <image:license>https://avtobelgium.by/</image:license>
+    </image:image>
+  </url>
+
+</urlset> 

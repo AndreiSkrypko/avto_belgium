@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://westgruzauto.netlify.app/</loc>
-    <lastmod>2025-08-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://avtobelgium.by/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/avto_header.jpg</image:loc>
+      <image:title>Авто из Бельгии - Доставка автомобилей в Беларусь</image:title>
+      <image:caption>Профессиональный подбор и доставка автомобилей из Бельгии в Беларусь</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/auto_scout.png</image:loc>
+      <image:title>Autoscout24 - Автомобильная площадка</image:title>
+      <image:caption>Крупнейшая европейская площадка для поиска автомобилей</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/mobile_de.png</image:loc>
+      <image:title>Mobile.de - Автомобильная площадка</image:title>
+      <image:caption>Немецкая площадка для поиска автомобилей</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/calculator.png</image:loc>
+      <image:title>Таможенный калькулятор</image:title>
+      <image:caption>Расчет таможенных платежей при ввозе автомобилей</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://avtobelgium.by/img/car.jpg</image:loc>
+      <image:title>Процесс доставки автомобиля</image:title>
+      <image:caption>Как мы работаем - этапы доставки автомобиля</image:caption>
+    </image:image>
   </url>
-
 
 </urlset>
