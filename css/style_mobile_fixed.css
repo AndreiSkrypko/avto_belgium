@@ -180,6 +180,7 @@ p {
   gap: 0.5rem;
   align-items: center;
   margin: 0 1rem;
+  margin-left: 2rem;
 }
 
 .social-links i {
@@ -838,6 +839,7 @@ section {
   
   .social-links {
     margin: 0 0.5rem;
+    margin-left: 1.5rem;
   }
   
   .social-links i {
@@ -870,6 +872,7 @@ section {
     width: 100%;
     justify-content: center;
     margin: 0.5rem 0;
+    margin-left: 1rem;
   }
 }
 
