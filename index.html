@@ -179,8 +179,7 @@
     <!-- Подключение js -->
     <script src="js/script.js"></script>
 
-    <!-- Подключение Formspree это форма для обратной связи-->
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -861,6 +860,8 @@
                                 </a>
                             </div>
                         </div>
+                        
+                        
                     </div>
                     
                     <div class="social-section mt-5">
@@ -902,12 +903,13 @@
                                     <label for="email">Email адрес *</label>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ваш телефон">
                                     <label for="phone">Телефон</label>
                                 </div>
                             </div>
+                            
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" id="message" name="message" placeholder="Ваше сообщение" style="height: 120px" required></textarea>
@@ -988,46 +990,73 @@
 </script>
 
 
-<!-- Скрипт из formspree, бесплатные формы -->
+<!-- Плавающая кнопка сообщения -->
+<div class="floating-message-btn" id="floatingMessageBtn">
+    <i class="fas fa-comments"></i>
+</div>
+
+<!-- Модальное окно с формой -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">
+                    <i class="fas fa-envelope me-2"></i>
+                    Связаться с нами
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form target="_blank" action="https://formsubmit.co/westgruzauto@gmail.com" method="POST" class="modern-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="modal-name" name="name" placeholder="Ваше имя" required>
+                                <label for="modal-name">Ваше имя *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="modal-email" name="email" placeholder="Ваш email" required>
+                                <label for="modal-email">Email адрес *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="tel" class="form-control" id="modal-phone" name="phone" placeholder="Ваш телефон">
+                                <label for="modal-phone">Телефон</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="modal-message" name="message" placeholder="Ваше сообщение" style="height: 120px" required></textarea>
+                                <label for="modal-message">Ваше сообщение *</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-lg w-100 submit-btn">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Отправить сообщение
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Скрипт для плавающей кнопки -->
 <script>
-    // Инициализация формы
-window.formbutton = window.formbutton || function () {
-  (formbutton.q = formbutton.q || []).push(arguments);
-};
-
-// Настройка формы
-formbutton("create", {
-  action: "https://formspree.io/f/mdkzpvra", // ← Заменить на свой ID
-  title: "Связаться с нами",
-  fields: [
-    {
-      type: "email",
-      label: "Email:",
-      name: "email",
-      required: true,
-      placeholder: "ваш@email.com"
-    },
-    {
-      type: "textarea",
-      label: "Сообщение:",
-      name: "message",
-      placeholder: "О чём вы хотите спросить?"
-    },
-    { type: "submit" }
-  ],
-  styles: {
-    title: {
-      backgroundColor: "#00ced1",
-      color: "white"
-    },
-    button: {
-      backgroundColor: "#00ced1",
-      color: "white"
-    }
-  },
-  initiallyVisible: false // ← теперь форма НЕ появляется при загрузке
+document.addEventListener('DOMContentLoaded', function() {
+    const floatingBtn = document.getElementById('floatingMessageBtn');
+    const messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
+    
+    floatingBtn.addEventListener('click', function() {
+        messageModal.show();
+    });
 });
-
 </script>
 
 
