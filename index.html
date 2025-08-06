@@ -855,21 +855,25 @@
 
             <!-- Правая колонка: Форма -->
             <div class="col-md-6">
-                <form action="https://formspree.io/f/mdkzpvra" method="POST" class="row g-3 pretty-form">
-                    <div class="col-12">
-                        <label for="email" class="form-label">Ваш Email</label>
-                        <input type="email" class="form-control pretty-input" id="email" name="email" required
-                               placeholder="you@example.com">
-                    </div>
-                    <div class="col-12">
-                        <label for="message" class="form-label">Сообщение</label>
-                        <textarea class="form-control pretty-input" id="message" name="message" rows="5"
-                                  placeholder="Ваш вопрос..." required></textarea>
-                    </div>
-                    <div class="col-12 text-end">
-                        <button type="submit" class="btn pretty-button px-4">Отправить</button>
-                    </div>
-                </form>
+                <div class="container">
+                    <h1>FormSubmit Demo</h1>
+                    <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Полное имя" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email адрес" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Отправить форму</button>
+                    </form>
+                </div>
             </div>
 
 
